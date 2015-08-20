@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Funny Jokes</string>
+    <string name="banner_ad_unit_id">ca-app-pub-5829945009169600/1569106363</string>
+    <string name="previousJoke">Previous joke</string>
+    <string name="nextJoke">Next joke</string>
+    <string name="shareJoke">Share joke</string>
+    <string name="addToFavourites">Add joke to favourites</string>
+    <string name="share">Share</string>
+    <string name="jokeNumber">Joke Number</string>
+    <string name="googleAnalytics">UA-54524356-16</string>
+    <string name="random">Random</string>
+</resources>
