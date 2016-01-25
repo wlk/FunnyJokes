@@ -1,4 +1,4 @@
-package com.varwise.funnyjokes.db;
+package com.varwise.jokes.db;
 
 import android.content.Context;
 import android.database.Cursor;

@@ -1,4 +1,4 @@
-package com.varwise.funnyjokes;
+package com.varwise.jokes;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -16,8 +16,8 @@ import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.analytics.HitBuilders;
 import com.google.android.gms.analytics.Tracker;
-import com.varwise.funnyjokes.db.Joke;
-import com.varwise.funnyjokes.db.JokesDB;
+import com.varwise.jokes.db.Joke;
+import com.varwise.jokes.db.JokesDB;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -80,9 +80,9 @@ public class JokeActivity extends Activity implements View.OnClickListener {
     }
 
     private void maybeShowInterstitial(){
-        if(MainActivity.shouldShowAds && (MainActivity.totalAdsThisRun > 20 && MainActivity.totalAdsThisRun % 25 == 0)) {
+        if(MainActivity.shouldShowAds && (MainActivity.totalAdsThisRun > 20 && MainActivity.totalAdsThisRun % 10 == 0)) {
             interstitial = new InterstitialAd(this);
-            interstitial.setAdUnitId("ca-app-pub-5829945009169600/3045839569");
+            interstitial.setAdUnitId("ca-app-pub-5829945009169600/1766794363");
             interstitial.setAdListener(new AdListener() {
                 @Override
                 public void onAdLoaded() {

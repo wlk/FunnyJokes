@@ -1,4 +1,4 @@
-package com.varwise.funnyjokes;
+package com.varwise.jokes;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -13,8 +13,8 @@ import android.widget.ListView;
 import com.google.android.gms.analytics.GoogleAnalytics;
 import com.google.android.gms.analytics.HitBuilders;
 import com.google.android.gms.analytics.Tracker;
-import com.varwise.funnyjokes.db.Category;
-import com.varwise.funnyjokes.db.JokesDB;
+import com.varwise.jokes.db.Category;
+import com.varwise.jokes.db.JokesDB;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,7 +31,7 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
     public static GoogleAnalytics analytics;
     public static Tracker tracker;
     public static boolean shouldShowAds = true;
-    public static boolean shouldShowAppRate = false;
+    public static boolean shouldShowAppRate = true;
     public Button button;
 
     @Override
@@ -67,8 +67,8 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
     private void maybeShowAppRate(){
         if(shouldShowAppRate) {
             AppRate.with(this)
-                    .setInstallDays(1)
-                    .setLaunchTimes(3)
+                    .setInstallDays(2)
+                    .setLaunchTimes(5)
                     .setRemindInterval(1)
                     .setShowNeutralButton(true)
                     .setDebug(false)

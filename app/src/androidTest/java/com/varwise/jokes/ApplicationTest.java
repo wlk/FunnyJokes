@@ -1,4 +1,4 @@
-package com.varwise.funnyjokes;
+package com.varwise.jokes;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

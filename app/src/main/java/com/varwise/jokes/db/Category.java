@@ -1,4 +1,4 @@
-package com.varwise.funnyjokes.db;
+package com.varwise.jokes.db;
 
 public class Category {
     public final int _id;

@@ -1,4 +1,4 @@
-package com.varwise.funnyjokes.db;
+package com.varwise.jokes.db;
 
 public class Joke {
     public final int _id;
